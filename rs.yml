@@ -5,9 +5,9 @@ metadata:
 spec:
     replicas: 3
     selector:
-         matchExpressions:
-              - { key: env , operator: In , values: [ production ] }
-              - { key: country , operator: In , values: [ us ] }
+         matchLabels:
+             - env: production
+             - country: us
     template:
         metadata:
             name: myweb-pod
