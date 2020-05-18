@@ -6,8 +6,7 @@ spec:
     replicas: 3
     selector:
          matchLabels:
-             - env: production
-             - country: us
+            env: production
     template:
         metadata:
             name: myweb-pod
